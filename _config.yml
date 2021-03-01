@@ -1,0 +1,30 @@
+# Dependencies
+markdown:         kramdown
+highlighter:      rouge
+
+# Permalinks
+permalink:        pretty
+# relative_permalinks: true
+
+# Setup
+title:            Rémy Moll
+tagline:          'A personal website'
+description:      'My little personal website. I write about a few events and topics that I am working on. Many of them will be related to my studies.'
+url:              https://L0rd0fB0red0m.github.io
+baseurl:          https://L0rd0fB0red0m.github.io/
+
+author:
+  name:           'Rémy Moll'
+  email:          remoll@ethz.ch
+  github:         https://github.com/L0rd0fB0red0m
+
+paginate:         2
+
+collections:
+  physics_posts:
+    test: test
+
+# Custom vars
+
+github:
+  repo:           https://github.com/L0rd0fB0red0m/L0rd0fB0red0m.github.io
