@@ -11,7 +11,7 @@ title:            Rémy Moll
 tagline:          'A personal website'
 description:      'My little personal website. I write about a few events and topics that I am working on. Many of them will be related to my studies.'
 url:              https://n.ethz.ch/~remoll
-baseurl:          /~remoll/
+baseurl:          /~remoll
 
 author:
   name:           'Rémy Moll'
