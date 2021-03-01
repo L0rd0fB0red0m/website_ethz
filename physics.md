@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Physical doodling
-permalink: /physics
+permalink: physics
 ---
 Oh hi, I didn't see you there! I'll be writing about a few exercises I'm doing during my Physics-III course. That means that this page will continuously get longer and more rich, I hope it turns out well.
 
