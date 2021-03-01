@@ -10,8 +10,8 @@ permalink:        pretty
 title:            Rémy Moll
 tagline:          'A personal website'
 description:      'My little personal website. I write about a few events and topics that I am working on. Many of them will be related to my studies.'
-url:              https://L0rd0fB0red0m.github.io
-baseurl:          https://L0rd0fB0red0m.github.io/
+url:              https://n.ethz.ch/~remoll
+baseurl:          https://n.ethz.ch/~remoll/
 
 author:
   name:           'Rémy Moll'
@@ -27,4 +27,4 @@ collections:
 # Custom vars
 
 github:
-  repo:           https://github.com/L0rd0fB0red0m/L0rd0fB0red0m.github.io
+  repo:           https://github.com/L0rd0fB0red0m/website_ethz
