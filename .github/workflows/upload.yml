@@ -18,11 +18,12 @@ jobs:
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         build_only: true
-    - uses: SamKirkland/FTP-Deploy-Action@4.0.0
-      with:
-        server: hg.n.ethz.ch
-        username: remoll
-        password: ${{ secrets.ftp_password }}
-        protocol: ftps
-        local-dir: ./build/
-        server-dir: ./homepage/
+    - name: Deploy to ETH
+      uses: easingthemes/ssh-deploy@v2.1.5
+      env:
+        SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
+        SOURCE: "build/"
+        REMOTE_HOST: ${{ secrets.REMOTE_HOST }}
+        REMOTE_USER: ${{ secrets.REMOTE_USER }}
+        TARGET: ${{ secrets.REMOTE_TARGET }}
+
