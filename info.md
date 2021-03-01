@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Info
-permalikn: info
+permalink: info
 ---
 
 <p class="message">
@@ -11,4 +11,4 @@ permalikn: info
 To learn more and get started, have a look at [GitHub Pages](https://pages.github.com). It's quite fascinating what you can do on GitHub.
 
 
-If you want to get in touch, talk about, the content, the setup, or anything else, head over to [About me](about) and write me!
+If you want to get in touch, talk about, the content, the setup, or anything else, head over to [About me]({{ site.baseurl }}about) and write me!

@@ -8,8 +8,8 @@ permalink: about
 
 My name is Rémy Moll. I currently live and study in Zurich, Switzerland. Please have a look at my curriculum vitae:
 
-<object width="100%" height="700" type="application/pdf" data="{{ site.baseurl }}public/cv.pdf?#zoom=80&scrollbar=0&toolbar=0&navpanes=0">
-    <p>It seems like the pdf won't load. Try downloading it anyway: <a href="{{ site.baseurl }}public/cv.pdf">cv.pdf</a></p>
+<object width="100%" height="700" type="application/pdf" data="{{ site.baseurl }}/public/cv.pdf?#zoom=80&scrollbar=0&toolbar=0&navpanes=0">
+    <p>It seems like the pdf won't load. Try downloading it anyway: <a href="{{ site.baseurl }}/public/cv.pdf">cv.pdf</a></p>
 </object>
 
 ## Get in touch
