@@ -39,13 +39,32 @@ $$\nabla \cdot \mathbf{A} = - \dfrac{1}{c^2}\dfrac{\partial \phi}{\partial t}$$
 
 which we now plugin into our previous expression to obtain:
 
-$$-\dfrac{\partial}{\partial t} - \dfrac{1}{c^2}\dfrac{\partial \phi}{\partial t} - \Delta \phi = \dfrac{\partial}{\partial t} \dfrac{1}{c^2}\dfrac{\partial \phi}{\partial t} - \Delta \phi = \left( \Delta - \dfrac{1}{c^2} \dfrac{\partial^n}{\partial t^n} \right) \phi = 0$$
-
-How about we write the above as:
-
 $$
 \begin{align}
     -\dfrac{\partial}{\partial t} - \dfrac{1}{c^2}\dfrac{\partial \phi}{\partial t} - \Delta \phi & = \dfrac{\partial}{\partial t} \dfrac{1}{c^2}\dfrac{\partial \phi}{\partial t} - \Delta \phi \\
     & = \left( \Delta - \dfrac{1}{c^2} \dfrac{\partial^n}{\partial t^n} \right) \phi = 0
+\end{align}
+$$
+
+which is just what we wanted. It's just a reminder to see that those wave equations don't come out of nowhere.
+
+We can now consider two well-known types of vawes and show that they do actually fulfill the wave equation. Namely we'll see this for
+
+$$\phi_p (\mathbf{r}, t) = f_{+} (\mathbf{k \cdot r} + \omega t) + f_{-} (\mathbf{k \cdot r} - \omega t)$$
+
+(a planar wave) and
+$$\phi_s (\mathbf{r}, t) = \dfrac{1}{r} \cdot \left[ g_{+} (\mathbf{k \cdot r} + \omega t) + g_{-} (\mathbf{k \cdot r} - \omega t) \right] $$
+
+(a spherical wave).
+
+This usually is only a matter of plugging in the expression and verifying the outcome (remember, we expect $0$). 
+
+So let's do just that, and start by recalling the laplacian in cartesian and spherical coordinates:
+> $$1 + 2 + 3 + 4 + 5$$
+
+$$
+\begin{align}
+    \left( \Delta - \dfrac{1}{c^2} \dfrac{\partial^n}{\partial t^n} \right) \phi_p
+    & = 
 \end{align}
 $$
