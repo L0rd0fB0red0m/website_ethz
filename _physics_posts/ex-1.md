@@ -40,3 +40,12 @@ $$\nabla \cdot \mathbf{A} = - \dfrac{1}{c^2}\dfrac{\partial \phi}{\partial t}$$
 which we now plugin into our previous expression to obtain:
 
 $$-\dfrac{\partial}{\partial t} - \dfrac{1}{c^2}\dfrac{\partial \phi}{\partial t} - \Delta \phi = \dfrac{\partial}{\partial t} \dfrac{1}{c^2}\dfrac{\partial \phi}{\partial t} - \Delta \phi = \left( \Delta - \dfrac{1}{c^2} \dfrac{\partial^n}{\partial t^n} \right) \phi = 0$$
+
+How about we write the above as:
+
+$$
+\begin{align}
+    -\dfrac{\partial}{\partial t} - \dfrac{1}{c^2}\dfrac{\partial \phi}{\partial t} - \Delta \phi & = \dfrac{\partial}{\partial t} \dfrac{1}{c^2}\dfrac{\partial \phi}{\partial t} - \Delta \phi \\
+    & = \left( \Delta - \dfrac{1}{c^2} \dfrac{\partial^n}{\partial t^n} \right) \phi = 0
+\end{align}
+$$
