@@ -19,6 +19,7 @@ author:
   github:         https://github.com/L0rd0fB0red0m
 
 paginate:         2
+paginate_path:    "/blog/page:num"
 
 collections:
   physics_posts:
