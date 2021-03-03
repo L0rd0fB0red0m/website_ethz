@@ -90,4 +90,25 @@ $$
 \end{align}
 $$
 
-which equals $$0$$ if $$\omega^2 = c^2 k^2$$. (not unexpected, huh?)
+which equals $$0$$ if $$\omega^2 = c^2 k^2$$. (not too unexpected, huh?)
+
+For the spherical wave there isn't any angular dependence, so the laplacian reduces to
+
+$$\Delta_r = \dfrac{1}{r} \dfrac{\partial^2}{\partial r^2}$$
+
+and we then simply apply as above:
+
+$$
+\begin{align}
+    \left( \Delta - \dfrac{1}{c^2} \dfrac{\partial^2}{\partial t^2} \right) \dfrac{1}{r} g_{\pm} (\mathbf{k \cdot r} \pm \omega t)
+    & = \left( \dfrac{1}{r}\dfrac{\partial^2}{\partial r^2} - \dfrac{1}{c^2} \dfrac{\partial^2}{\partial t^2} \right) \dfrac{1}{r} g_{\pm} \\
+    & = \left(k^2 - \dfrac{(\pm \omega)^2}{c^2} \right) \dfrac{1}{r} g''_{\pm}
+\end{align}
+$$
+
+which reevaluates to $$0$$ when $$\omega^2 = c^2 k^2$$.
+
+Let's now take a look at a special wave-constellation. The Gaussian wave packet is described by
+
+$$\phi_G (z,t) = \dfrac{2}{\Delta k_0 \cdot \sqrt{\pi}} \int_{-\infty}^\infty dk \, \exp \left( - \dfrac{4 (k - k_0)^2}{(\Delta k_0)^2} \right) \cdot e^{(kz -wt)}$$
+
