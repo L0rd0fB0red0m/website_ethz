@@ -72,11 +72,22 @@ So let's do just that, and start by recalling the laplacian in cartesian and sph
 >
 > These are operators and we **apply them to functions**, in this case our expressions of $$\phi$$.
 
+We need to make another consideration, namely the chain rule for the gradient:
+
+$$\nabla \cdot (\mathbf{k} \alpha) = \mathbf{k} \cdot (\nabla \alpha) + (\nabla \cdot \mathbf{k}) \alpha$$
+
+And we also have $$\nabla f (\mathbf{k \cdot r}) = \mathbf{k} \cdot f'(\mathbf{k \cdot r})$$. (This can be seen by applying $$\nabla$$ in cartesian coordinates and the fact that $$\mathbf{k \cdot r} = k_x x + k_y y + k_z z$$)
+
 Let's get going then:
 
 $$
 \begin{align}
-    \left( \Delta - \dfrac{1}{c^2} \dfrac{\partial^n}{\partial t^n} \right) \phi_p
-    & = 
+    \left( \Delta - \dfrac{1}{c^2} \dfrac{\partial^2}{\partial t^2} \right) f_{\pm} (\mathbf{k \cdot r} \pm \omega t)
+    & = \nabla \cdot \nabla f_{\pm} (\mathbf{k \cdot r} \pm \omega t) - \dfrac{1}{c^2} \dfrac{\partial^2}{\partial t^2} f_{\pm} (\mathbf{k \cdot r} \pm \omega t) \\
+    & = \nabla \cdot ( \mathbf{k} f'_{\pm} (\mathbf{k \cdot r} \pm \omega t)) \mp \dfrac{\omega}{c^2} \dfrac{\partial}{\partial t} f_{\pm} (\mathbf{k \cdot r} \pm \omega t) \\
+    & = \mathbf{k} \cdot \mathbf{k} f''_{\pm} (\mathbf{k \cdot r} \pm \omega t)) - \dfrac{\omega^2}{c^2} f_{\pm} (\mathbf{k \cdot r} \pm \omega t) \\
+    & = \left( |\mathbf{k}|^2 - \dfrac{\omega^2}{c^2} \right) f_{\pm}
 \end{align}
 $$
+
+which equals $$0$$ if $$\omega^2 = c^2 k^2$$. (not unexpected, huh?)
