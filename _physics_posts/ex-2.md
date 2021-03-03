@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: physics
 title: Fermat's principle
 topic: Lenses and optics
 ---

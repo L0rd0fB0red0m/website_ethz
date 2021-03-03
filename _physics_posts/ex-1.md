@@ -19,7 +19,7 @@ A big help will be the **Lorentz gauge-condition**, but let's first recall the f
 > 
 > $$\nabla \times \mathbf{E} = - \dfrac{\partial \mathbf{B}}{\partial t}$$
 > 
-> $$\nabla \times \mathbf{B} = - \mu_0 \epsilon_0 \dfrac{\partial \mathbf{E}}> {\partial t}$$
+> $$\nabla \times \mathbf{B} = - \mu_0 \epsilon_0 \dfrac{\partial \mathbf{E}}{\partial t}$$
 
 As already mentionned, we will also make use of:
 
@@ -58,7 +58,7 @@ $$\phi_s (\mathbf{r}, t) = \dfrac{1}{r} \cdot \left[ g_{+} (\mathbf{k \cdot r} +
 
 (a spherical wave).
 
-This usually is only a matter of plugging in the expression and verifying the outcome (remember, we expect $0$). 
+This usually is only a matter of plugging in the expression and verifying the outcome (remember, we expect $$0$$). 
 
 So let's do just that, and start by recalling the laplacian in cartesian and spherical coordinates:
 
