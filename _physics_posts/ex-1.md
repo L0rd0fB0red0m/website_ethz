@@ -53,6 +53,7 @@ We can now consider two well-known types of vawes and show that they do actually
 $$\phi_p (\mathbf{r}, t) = f_{+} (\mathbf{k \cdot r} + \omega t) + f_{-} (\mathbf{k \cdot r} - \omega t)$$
 
 (a planar wave) and
+
 $$\phi_s (\mathbf{r}, t) = \dfrac{1}{r} \cdot \left[ g_{+} (\mathbf{k \cdot r} + \omega t) + g_{-} (\mathbf{k \cdot r} - \omega t) \right] $$
 
 (a spherical wave).
@@ -60,7 +61,16 @@ $$\phi_s (\mathbf{r}, t) = \dfrac{1}{r} \cdot \left[ g_{+} (\mathbf{k \cdot r} +
 This usually is only a matter of plugging in the expression and verifying the outcome (remember, we expect $0$). 
 
 So let's do just that, and start by recalling the laplacian in cartesian and spherical coordinates:
-> $$1 + 2 + 3 + 4 + 5$$
+
+> In cartesian coordinates we have: 
+> $$\Delta = \dfrac{\partial^2}{\partial x^2} + \dfrac{\partial^2}{\partial y^2} + \dfrac{\partial^2}{\partial z^2}$$
+> In spherical coordinates, things heat up a bit:
+> 
+> $$\Delta = \frac{1}{r^2} \frac{\partial}{\partial r} \cdot \left(r^2 \frac{\partial}{\partial r} \right) + \frac{1}{r^2 \sin \theta} \frac{\partial}{\partial \theta} \left( \sin \theta \frac{\partial}{\partial \theta} \right) + \frac{1}{r^2 \sin^2 \theta} \frac{\partial^2}{\partial \varphi^2}$$
+>
+> These are operators and we **apply them to functions**, in this case our expressions of $\phi$.
+
+Let's get going then:
 
 $$
 \begin{align}
