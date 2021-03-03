@@ -23,7 +23,7 @@ paginate_path:    "/blog/page:num"
 
 collections:
   physics_posts:
-    test: test
+    output: true
 
 # Custom vars
 
