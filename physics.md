@@ -33,7 +33,7 @@ Oh hi, I didn't see you there! I'll be writing about a few exercises I'm doing d
   {% for post in site.physics_posts %}
   <div class="post">
     <h1 class="post-title">
-      <a href="#">
+      <a href={{ post.url }}>
         {{ post.title }}
       </a>
     </h1>
