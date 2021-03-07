@@ -5,26 +5,21 @@ permalink: physics
 ---
 
 <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-      extensions: [
-        "MathMenu.js",
-        "MathZoom.js",
-        "AssistiveMML.js",
-        "a11y/accessibility-menu.js"
-      ],
-      jax: ["input/TeX", "output/CommonHTML"],
-      TeX: {
-        extensions: [
-          "AMSmath.js",
-          "AMSsymbols.js",
-          "noErrors.js",
-          "noUndefined.js",
-        ]
-      }
-    });
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']],
+      displayMath: [['$$', '$$'], ['\\[', '\\]']],
+      packages: ['base'],
+      processEnvironments: true
+    },
+    loader: {
+      load: ['output/chtml']
+    }
+  };    
 </script>
-<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>
-
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
 Oh hi, I didn't see you there! I'll be writing about a few exercises I'm doing during my Physics-III course. That means that this page will continuously get longer and more rich, I hope it turns out well.
 
 
@@ -32,7 +27,7 @@ Oh hi, I didn't see you there! I'll be writing about a few exercises I'm doing d
   {% for post in site.physics_posts %}
   <div class="post">
     <h1 class="post-title">
-      <a href="{{ post.url }}">
+      <a href="{{ site.baseurl }}/{{ post.url }}">
         {{ post.title }}
       </a>
     </h1>
@@ -42,3 +37,5 @@ Oh hi, I didn't see you there! I'll be writing about a few exercises I'm doing d
   </div>
   {% endfor %}
 </div>
+
+## Did you find an error? Please report it!

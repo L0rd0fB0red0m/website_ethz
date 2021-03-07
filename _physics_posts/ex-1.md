@@ -5,13 +5,13 @@ topic: Maxwell equations
 ---
 
 
-Remember the maxwell equations? We'd like to use them in order to deduce the wave equation (for some potential $\phi$):
+Remember the maxwell equations? We'd like to use them in order to deduce the wave equation (for some potential $$\phi$$):
 
 $$\left( \Delta - \dfrac{1}{c^2} \dfrac{\partial^n}{\partial t^n} \right) \phi = 0$$
 
 (with $$c^2 = (\mu_0 \epsilon_0)^{-1}$$).
 
-A big help will be the **Lorentz gauge-condition**, but let's first recall the full set of maxwell equations in vacuum:
+We will make use of the **Lorentz gauge-condition**, but let's first recall the full set of maxwell equations in vacuum:
 
 > $$\nabla \cdot \mathbf{E} = 0$$
 > 
@@ -21,7 +21,7 @@ A big help will be the **Lorentz gauge-condition**, but let's first recall the f
 > 
 > $$\nabla \times \mathbf{B} = - \mu_0 \epsilon_0 \dfrac{\partial \mathbf{E}}{\partial t}$$
 
-As already mentionned, we will also make use of:
+As already mentioned, we will also make use of:
 
 $$\nabla \cdot \mathbf{A} + \dfrac{1}{c^2}\dfrac{\partial \phi}{\partial t} = 0$$
 
@@ -110,5 +110,26 @@ which reevaluates to $$0$$ when $$\omega^2 = c^2 k^2$$.
 
 Let's now take a look at a special wave-constellation. The Gaussian wave packet is described by
 
-$$\phi_G (z,t) = \dfrac{2}{\Delta k_0 \cdot \sqrt{\pi}} \int_{-\infty}^\infty dk \, \exp \left( - \dfrac{4 (k - k_0)^2}{(\Delta k_0)^2} \right) \cdot e^{(kz -wt)}$$
+$$\phi_G (z,t) = \dfrac{2}{\Delta k_0 \cdot \sqrt{\pi}} \int_{-\infty}^\infty dk \, \exp \left( - \dfrac{4 (k - k_0)^2}{(\Delta k_0)^2} \right) \cdot e^{i(kz -wt)}$$
 
+So what exactly is this? First and foremost it is a (weighted) linear combination of plane waves. Effectively this is centered around $$k_0$$ with a width of $$\Delta k_0$$. 
+
+We can still extract even more information and show that this is aperiodic. We'll also compute the phase velocity and the group velocity. In the end we are going to determine whether dispersion occurs here.
+
+We first show that $$\phi_G$$ is aperiodic and that its amplitude is actually gaussianly distributed. In order to do just that we actually compute the integral. A good idea would be to substitute $$x = k - k_0$$ and to remember that $$\omega = ck$$ which is also dependent of $$k$$.
+
+$$
+\begin{align}
+    \phi_G (z,t)
+    & = \frac{2}{(\Delta k_0) \sqrt{\pi}} \int_{-\infty}^\infty dk \, \exp \left( - \dfrac{4 (k - k_0)^2}{(\Delta k_0)^2} \right) \cdot e^{i (k - k_0) (z - ct) + ik_0 (z-ct)} \\
+    & = \frac{2}{(\Delta k_0) \sqrt{\pi}} \int_{-\infty}^\infty dx \exp \left[ - \frac{4}{(\Delta k_0)^2} x^2 \right] \cdot e^{ix (z - ct)} \cdot e^{ik_0 (z - ct)} \\
+    & = \frac{2 e^{i k_0 (z - ct)}}{(\Delta k_0) \sqrt{\pi}} \int_{-\infty}^\infty dx \exp \left[ - \frac{4}{(\Delta k_0)^2} x^2 + x (z - ct) \right] \\
+    & \text{we have the identity: } \int_{-\infty}^\infty dx e^{ax^2 + bx} = \sqrt{\frac{\pi}{a}} e^{b^2 / 4a} \\
+    & = \frac{2 e^{i k_0 (z - ct)}}{(\Delta k_0) \sqrt{\pi}} \cdot \sqrt{\pi} \cdot \frac{\Delta k_0}{2} \exp \left[ \frac{(z-ct)^2 \cdot (\Delta k_0)^2}{4 \cdot 4}\right] \\
+    & =  e^{i k_0 (z - ct)} \cdot \exp \left[ \frac{1}{4} \cdot (z-ct) \cdot \Delta k_0 \right]^2 \\
+\end{align}
+$$
+
+What we obtain is a plane wave travelling at a velocity $$c$$ with a wavelength $$2\pi / k_0$$ (first term). The second term is the gaussian envelope which distributes the amplitudes of the wave (whole expression). The gaussian has a width of $$1 / \Delta k_0$$ and is centered around the point $$z - ct$$. Both travel at a speed of $$c$$ so the waves phase velocity and the envelopes group velocity coincide.
+
+This last point allows us to say that the medium is non-dispersive, which is what we expect from the vacuum.
