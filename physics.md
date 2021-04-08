@@ -15,7 +15,12 @@ permalink: physics
     loader: {
       load: ['output/chtml']
     }
-  };    
+  };
+  MathJax.Hub.Config({ 
+    "HTML-CSS": { scale: 75, linebreaks: { automatic: true } }, 
+    SVG: { linebreaks: { automatic:true } }, 
+    displayAlign: "left" });
+
 </script>
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
